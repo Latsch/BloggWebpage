@@ -4,7 +4,8 @@
   		<% @articles.errors.full_messages.each do |error| %>
     		<li><%= error %></li>
   		<% end %>
-  	</ul>	<p>
+	</ul>
+	<p>
 	  <%= f.label :title %> </br>
 	  <%= f.text_field :title %>
 	</p>
@@ -13,6 +14,6 @@
 	  <%= f.text_area :body %>
 	</p>
 	<p>
-	  <% f.submit %>
+	  <%= f.submit %>
 	</p>
 <% end %>
